@@ -64,8 +64,6 @@ fn get_claims(claim_mutex: State<Claims>) -> String {
     return json!(claim_list.clone()).to_string();
 }
 
-
-
 fn main() {
     rocket::ignite()
         .manage(Claims {
